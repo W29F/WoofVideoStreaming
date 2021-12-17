@@ -1,0 +1,37 @@
+{
+    "name": "Video Streaming Bot",
+    "description": "Telegram bot for streaming video in groups",
+    "keywords": ["telegram", "python", "video", "bot"],
+    "repository": "https://github.com/W29F/WoofVideoStreaming",
+    "env": {
+      "STRING_SESSION": {
+        "description": "A Pyrogram session string.Generate it using replit",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A bot token from @BotFather.",
+        "required": true
+      },
+      "API_ID": {
+        "description": "An api ID from https://my.telegram.org/apps.",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "An api hash from https://my.telegram.org/apps.",
+        "required": true
+      },
+      "VIDEO_CHAT_ID": {
+        "description": "A Group Chat Id To Stream Videos",
+        "required": true
+      },
+      "CUSTOM_ICON": {
+        "description": "A custom icon to be displayed rather than the default",
+        "required": false
+      }
+    },
+    "buildpacks": [
+      {
+        "url": "heroku/python"
+      }
+    ]
+  }
